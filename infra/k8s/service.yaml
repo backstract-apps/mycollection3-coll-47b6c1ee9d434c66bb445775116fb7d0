@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mycollection3-coll-47b6c1ee9d434c66bb445775116fb7d0-srv
+spec:
+  selector:
+    app: mycollection3-coll-47b6c1ee9d434c66bb445775116fb7d0
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 7070
+  type: ClusterIP
